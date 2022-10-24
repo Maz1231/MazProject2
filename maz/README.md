@@ -13,3 +13,6 @@ See a table of the Teams names from Premier League table.
 Fill out and submit the form to add a new Team or look for an existing one . This should add the new team to the table as well as post the new team to the backend API for persistence.
 
 Filter teams by typing into the search bar. Only teams that have any field that matches the search term should be in the table.
+
+
+![](src/component/rename.png)
