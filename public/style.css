@@ -1,0 +1,386 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    background: #5c5cbc;
+} */
+
+.header {
+    display: flex;
+    height: 50px;
+    /* gap: 24px; */
+
+}
+
+.header > .button {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ff3333;
+    
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.home-page-items {
+    font-size: 2vh;
+}
+
+@media only screen and (min-width: 700px) {
+    .home-page-items {
+        font-size: 5vh;
+    }
+
+    .home-page-logo > img {
+        width: 25%;
+    }
+}
+
+.home-page-items > a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.home-page-items > a:hover {
+    box-shadow: inset 1000px 0 0 0 #54b3d6;
+    color: rgb(255, 255, 255);
+}
+
+.home-page-logo {
+    margin-top: 8vh;
+}
+
+.home-page-items > img {
+    width: 30%;
+}
+
+/* Project 1 - Business Card */
+
+.info-img-proj1 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info-name-proj1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1.5vw;
+}
+
+.info-position-proj1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #F3BF99;
+}
+
+.info-email-proj1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.app-proj1 {
+    background: #000000;
+    border-radius: 10px 10px 10px 10px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.info-btns-proj1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-btns-proj1 > a > button {
+    width: 100px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(229, 204, 204, 0.05);
+    border-radius: 6px;
+    margin-right: 7px;
+    font-size: 16px;
+    padding: 8px 8px 8px 32px;
+    background-position: 8px;
+}
+
+.info-btns-proj1 > a > button:hover {
+    cursor: pointer;
+}
+
+.info-email-btn-proj1 {
+    background: #FFFFFF url("https://img.icons8.com/material-rounded/344/new-post.png");
+}
+
+.info-linkedin-btn-proj1 {
+    background: #5093E2 url("https://img.icons8.com/ios-filled/344/ffffff/linkedin.png");
+    color: white;
+}
+
+.body-comp-proj1 {
+    color: white;
+    text-align: start;
+    margin: 20px;
+}
+
+.footer-proj1 {
+    width: 100%;
+    height: 64px;
+    background: #e2e2e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-proj1 > a > img {
+    width: 45px;
+    margin: 5px
+}
+
+@media only screen and (min-width: 700px) {
+    .app-proj1 {
+        width: 35%;
+    }
+}
+
+
+/* Project 2 - Travel Journal */
+
+.nav-proj2 {
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+    color: white;
+}
+
+.nav-proj2 > p {
+    font-size: 4vh;
+}
+
+.navbar-logo-proj2 {
+    height: 34px;
+    margin-right: 7px;
+}
+
+.location-proj2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.location-proj2 > img {
+    width: 35%;
+    height: 15%;
+    border-radius: 5px;
+    margin-right: 19px;
+}
+.location-icon-proj2 {
+    height: 1.5vw;
+    width: 1.5vw;
+    margin-right: 4px;
+}
+
+.location-country-proj2{
+    font-size: 2vw;
+    letter-spacing: 0.17em;
+    font-weight: 400px;
+    margin-right: 12px;
+}
+
+.map-link-proj2 {
+    font-size: 1.5vw;
+    text-decoration-line: underline;
+    color: #918E9B;
+    float: right;
+}
+
+.location-location-proj2 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: 2vh;
+    margin: 1.5vw 0 0 0;
+}
+
+.location-dates-proj2 {
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 12px;
+}
+
+.location-description-proj2 {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 150%;
+    max-width: 50vw;
+}
+
+/* Project 3 - Meme Generator */
+
+.header-proj3 {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    padding: 20px;
+}
+
+.header-image-proj3 {
+    height: 150%;
+    margin-right: 1rem;
+}
+
+.header-title-proj3 {
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+.header-subtitle-proj3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-proj3 {
+    display: grid;
+    grid-template: 40px 40px / 50% 50%;
+    gap: 17px;
+    margin-bottom: 17px;
+    padding: 1.75rem;
+}
+
+.form-input-proj3 {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form-button-proj3 {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #1b1a1a 1.14%, #a480b1 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.meme-proj3 {
+    position: absolute;
+    padding: 0em 1.75em 0em 1.75em;
+    height: 50%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.meme-image-proj3 {
+    max-width: 100%;
+    border-radius: 3px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height: 100%;
+}
+
+.meme-text-proj3 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top-proj3 {
+    top: 0;
+}
+
+.bottom-proj3 {
+    bottom: 0;
+}
+
