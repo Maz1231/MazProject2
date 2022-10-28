@@ -137,12 +137,12 @@ width: 50%; */
 
 
 .img {
-  display: block;
-  align-items: center;
-  width: 50%;
-  border: 2px solid rgb(3, 3, 3);
-  border-radius: 8px;
-  width: 200px;
+    display: flex;
+    background: #000000;
+    border-radius: 20px 20px 20px 20px;
+    width: 10%;
+    margin: 25px auto;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(195, 126, 215) 0px 0px 0px 6px, rgb(108, 92, 10) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 
 }
 
@@ -342,7 +342,7 @@ width: 50%; */
     justify-content: center;
     align-items: center;
     background-color: #F55A5A;
-    color: white;
+    color: rgb(249, 241, 241);
 }
 
 .nav-proj2 > p {
