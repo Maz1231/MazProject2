@@ -98,8 +98,8 @@ html, body {
 }
 
 .home-stuff {
-    display: block;
-  margin: auto;
+    display: inline-block;
+  margin: 25px auto;
   width: 50%;
   border: 2px solid rgb(3, 3, 3);
   border-radius: 8px;
@@ -140,7 +140,7 @@ width: 50%; */
     display: flex;
     background: #000000;
     border-radius: 20px 20px 20px 20px;
-    width: 10%;
+    width: 15%;
     margin: 25px auto;
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(195, 126, 215) 0px 0px 0px 6px, rgb(108, 92, 10) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 
@@ -152,7 +152,6 @@ width: 50%; */
 
 .exp-1 {
     display: flex;
-    flex: 1;
     background-color: #D5D4D8;
     color: rgb(7, 6, 6);
     font-size: 1.25rem;
@@ -165,8 +164,7 @@ width: 50%; */
 }
 
 .sport-2 {
-    display: flex;
-    flex: 1;
+    display: block;
     background-color: #000;
     color: white;
     font-size: 1.25rem;
