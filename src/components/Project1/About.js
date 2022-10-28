@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div>
             <h1>About</h1>
-            <p>Non of your business</p>
+            <p>My name is Maz 25 years old from Sudan</p>
         </div>
     )
 }

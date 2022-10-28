@@ -1,31 +1,33 @@
-import React, { useState } from "react";
-import { Card } from "semantic-ui-react";
+import React from "react";
 
-function ActivityCard({ activity }) {
-
-  const { sport, experience, image } = activity;
-
-
+function ActivityCard({sport, experience, image}) {
   return (
-    <Card>
-     <div>
-        <div className="image">
-          <img src={image} />
-        </div>
-        <div className="content">
-          <div className="header">{sport}</div>
-        </div>
-        <div className="extra content">
-          <span>
-            <i className="icon heartbeat red" />
-            {experience}
-          </span>
-        </div>
-      </div>
-    </Card>
+    <tr>
+      <th className="sport-2">{sport}</th>
+      <td className="exp-1">{experience}</td>
+      <img src={image} className = "img"/>
+    </tr>
   );
 }
 
-
-
 export default ActivityCard;
+
+
+
+
+
+
+
+// import React from "react";
+
+// function ActivityCard({sport, experience, image}) {
+//   return (
+//     <tr>
+//       <td>{sport}</td>
+//       <td>{experience}</td>
+//       <td>{image}</td>
+//     </tr>
+//   );
+// }
+
+// export default ActivityCard;

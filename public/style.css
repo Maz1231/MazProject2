@@ -24,13 +24,7 @@ html, body {
 
 
 
-/* * {
-    box-sizing: border-box;
-}
 
-body {
-    background: #5c5cbc;
-} */
 
 .header {
     display: flex;
@@ -53,15 +47,20 @@ body {
     
 }
 
+
+
 .home-page {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
+    
+
 }
 
 .home-page-items {
     font-size: 2vh;
+    
 }
 
 @media only screen and (min-width: 700px) {
@@ -81,6 +80,7 @@ body {
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
 }
 
 .home-page-items > a:hover {
@@ -94,8 +94,134 @@ body {
 
 .home-page-items > img {
     width: 30%;
+    
 }
 
+.home-stuff {
+    display: block;
+  margin: auto;
+  width: 50%;
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 8px;
+  width: 200px;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+  background-color: #e9e9e9;
+}
+.search-input {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration:dashed;
+    align-items: center;
+    justify-content: center;
+    border-right: 4px solid #ff3333;
+
+}
+
+/* display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%; */
+ 
+
+
+.img {
+  display: block;
+  align-items: center;
+  width: 50%;
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 8px;
+  width: 200px;
+
+}
+
+.sport-1 {
+    width: 100%;
+}
+
+.exp-1 {
+    display: flex;
+    flex: 1;
+    background-color: #D5D4D8;
+    color: rgb(7, 6, 6);
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ff3333;
+
+}
+
+.sport-2 {
+    display: flex;
+    flex: 1;
+    background-color: #000;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ff3333;
+    align-items: flex-end;
+}
+.exp {
+    width: 100%;
+}
+
+.img-1 {
+    width: 100%;
+    
+}
+
+.buttonS {
+    display: center;
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: stretch;
+}
+
+.NewForm {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ff3333;
+}
+
+.Active {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ff3333;
+}
 /* Project 1 - Business Card */
 
 .info-img-proj1 {
@@ -141,6 +267,8 @@ body {
     border-radius: 10px 10px 10px 10px;
     width: 75%;
     margin: 20px auto;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(195, 126, 215) 0px 0px 0px 6px, rgb(108, 92, 10) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    
 }
 
 .info-btns-proj1 {
@@ -203,6 +331,7 @@ body {
         width: 35%;
     }
 }
+
 
 
 /* Project 2 - Travel Journal */

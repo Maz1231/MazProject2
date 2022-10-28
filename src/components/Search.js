@@ -6,10 +6,10 @@ function Search({ searchTerm, onChangeSearch }) {
   }
 
   return (
-    <div className="ui search">
-      <div className="ui icon input">
+    <div className="search">
+      <div className="search-input">
         <input className="prompt" value={searchTerm} onChange={handleChange} />
-        <i className="search icon" />
+        <i className="search-icon" />
       </div>
     </div>
   );

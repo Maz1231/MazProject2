@@ -4,7 +4,7 @@ export default function Interests() {
     return (
         <div>
             <h1>Interests</h1>
-            <p>Staying in shape. Traveller wannabe. Mountain Camping. Pop culture ninja. Listening to music.</p>
+            <p>Staying in shape. Soccer, hiking, swimming going out and dancing</p>
         </div>
     )
 }

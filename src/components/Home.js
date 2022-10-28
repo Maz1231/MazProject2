@@ -1,8 +1,9 @@
 import React, {useEffect, useState } from "react";
-import NewForm from "/Users/maz/Desktop/Projects/MazProject2/src/components/NewForm.js";
-import Search from "/Users/maz/Desktop/Projects/MazProject2/src/components/Search.js";
-import ActivityCollection from "/Users/maz/Desktop/Projects/MazProject2/src/components/ActivityCollection.js";
+import NewForm from "./NewForm.js";
+import Search from "./Search.js";
+import ActivityCollection from "./ActivityCollection.js";
 import { Container } from "semantic-ui-react";
+import { act } from "@testing-library/react";
 // import data from "./Project2/data";
 
 
@@ -16,7 +17,7 @@ export default function Home(){
           .then((data) => setActivity(data));
       }, []);
       
-   console.log(activity)
+  //  console.log(activity)
     
     
       function handleAddActivity(newActivity) {
@@ -24,19 +25,19 @@ export default function Home(){
       }
 
     
-//       const activityToDisplay = activity.filter((active) =>
-//     active.sport.toLowerCase().includes(searchTerm.toLowerCase())
-//   );
+      const activityToDisplay = activity.filter((active) =>
+    active.sport.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
       return (
         <Container>
-          <h1>Activity Searcher</h1>
+          <h1 className="Active">List Of My Activities</h1>
           <br />
           <NewForm onAddActivity={handleAddActivity} />
           <br />
           <Search searchTerm={searchTerm} onChangeSearch={setSearchTerm} />
           <br />
-          <ActivityCollection activity={activity} />
+          <ActivityCollection activity={activityToDisplay} />
         </Container>
       );
     }

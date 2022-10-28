@@ -37,14 +37,15 @@ function NewForm({ onAddActivity }) {
 
   return (
     <div>
-      <h3>Add an activity!</h3>
-      <Form onSubmit={handleSubmit}>
+      <h3 className="NewForm">NewForm</h3>
+      <Form onSubmit={handleSubmit} className="buttonS">
         <Form.Group widths="equal">
           <Form.Input
             fluid
             label="sport"
             placeholder="sport"
             name="sport"
+            className="sport-1"
             value={formData.sport}
             onChange={handleChange}
           />
@@ -53,14 +54,16 @@ function NewForm({ onAddActivity }) {
             label="experience"
             placeholder="experience"
             name="experience"
+            className="exp"
             value={formData.experience}
             onChange={handleChange}
           />
           <Form.Input
             fluid
-            label="Image"
-            placeholder="Image"
-            name="Image"
+            label="image"
+            placeholder="image"
+            name="image"
+            className="img-1"
             value={formData.image}
             onChange={handleChange}
           />
